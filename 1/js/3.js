@@ -24,3 +24,13 @@ function go() {
 	window.open('https://google.com');
 }
 
+var b = document.createElement('br');
+document.body.appendChild(b);
+
+var inform = navigator.userAgent + ' - ' + navigator.platform;
+var sp = document.createElement('span');
+
+sp.textContent = inform;
+document.body.appendChild(sp);
+
+
