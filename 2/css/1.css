@@ -5,7 +5,10 @@
 
 #animation {
 	text-align: center;
-	transition-property: background-color, font-size, color, box-shadow, text-shadow;
+	transition-property: background-color,
+						 font-size, color,
+						 box-shadow,
+						 text-shadow;
 	transition-duration: 3s;
 }
 
