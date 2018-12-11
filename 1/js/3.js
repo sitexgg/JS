@@ -18,7 +18,7 @@ link.textContent = 'Google';
 document.body.appendChild(link);
 
 // После клика по $link запускаем функцию go
-// Открывает новую вкладку
+// Функция go открывает новую вкладку
 link.addEventListener('click', go);
 function go() {
 	window.open('https://google.com');
