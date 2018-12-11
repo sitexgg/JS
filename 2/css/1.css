@@ -12,8 +12,4 @@
 	transition-duration: 3s;
 }
 
-.new_bg:hover {
-	background-color: green;
-	font-size: 3em;
-	color: blue;
-}
+
