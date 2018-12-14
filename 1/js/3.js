@@ -5,6 +5,7 @@ document.body.setAttribute('style', 'background: red;');
 var get_back = prompt('Get back');
 get_back;
 
+
 // Если $get_back равен 1, то цвет фона меняется
 if(get_back == 1) {
 	document.body.setAttribute('style', 'background: white;');
