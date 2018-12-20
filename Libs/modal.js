@@ -10,7 +10,7 @@ function showModal() {
 	 // Модальное окно
 	var divContent = document.createElement('div');
 		divContent.setAttribute('class', 'modal-content');
-		divContent.style.cssText = 'background-color: rgb(254, 254, 254); margin: 8px auto; padding: 2em; border: 1px solid rgb(136, 136, 136); width: 90%; height: auto;';
+		divContent.style.cssText = 'background-color: rgb(254, 254, 254); margin: 8px auto; padding: 2em; border: 1px solid rgb(136, 136, 136); width: 80%; height: auto;';
 	  // Кнопка закрытия 
 	var closeSpan = document.createElement('span');
 		closeSpan.setAttribute('class', 'close');
