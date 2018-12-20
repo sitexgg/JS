@@ -1,22 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title>Test Scripts</title>
+  <meta charset="utf-8" />
+  <title></title>
+  <style>
+    .preload {
+      font-size: 3em;
+    }
+  </style>
 </head>
 <body>
-	<p class="modal">234</p>
-<button class="modal">Click me</button>
-<button class="modal">Click me</button>
-<button class="modal">Click me</button>
-<button class="modal">Click me</button>
+  <div class="preload"></div>
 
-<button class="modal">Click me</button>
-<button class="modal">Click me</button>
-
-<button class="modal">Click me</button>
-
-
-<script type="text/javascript" src="modal.js"></script>
+  
+  <script>
+    var preload = document.getElementsByClassName('preload')[0], i = 0;
+    
+    var timer = setInterval(function() {
+      preload.innerHTML = i++ % 100;
+    }, 100);
+    
+    
+    window.onload = function() {
+      clearInterval(timer);
+      preload.innerHTML = 'Страница полностью загружена';
+    };
+  </script>
 </body>
 </html>
