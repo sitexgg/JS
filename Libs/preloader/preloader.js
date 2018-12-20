@@ -24,10 +24,10 @@ document.body.onload = function() {
  			if(!preloader.classList.contains('done')) {
  				preloader.style.cssText = 'opacity: 0; visibility: hidden;';
  			}
- 		}, 999500);
+ 		}, 500);
  	}
  // Delete preloader
-setTimeout(dd, 9992000);
+setTimeout(dd, 2000);
 function dd() {
 	document.body.removeChild(divPreloader);
 }
