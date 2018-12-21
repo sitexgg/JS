@@ -4,7 +4,7 @@ var divPreloader = document.createElement('div');
  // Text loader
 var textLoader = document.createElement('p');
 	textLoader.textContent = 'WebNet';
-	textLoader.style.cssText = 'color: white; text-align: center; font-size: 6em; text-shadow: 0 0 25px blue;';
+	textLoader.style.cssText = 'color: white; text-align: center; font-size: 6em; text-shadow: 0 0 25px red;';
  // Logo 
 var imgLoader = document.createElement('img');
 	imgLoader.style.cssText = 'margin: 0 auto; display: block;';
