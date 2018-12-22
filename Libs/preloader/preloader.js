@@ -7,7 +7,7 @@ var textLoader = document.createElement('p');
 	textLoader.style.cssText = 'color: white; text-align: center; font-size: 5em; text-shadow: 0 0 25px red;';
  // Logo 
 var imgLoader = document.createElement('img');
-	imgLoader.style.cssText = 'margin: -15px auto;';
+	imgLoader.style.cssText = 'display: block; margin: 0 auto;';
 	imgLoader.setAttribute('src', 'mini_logo.png');
  // Loader
 var divLoader = document.createElement('div');
