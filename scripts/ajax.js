@@ -1,6 +1,7 @@
-$(document).ready(function() {
+document.body.onload = function()
 
-	$('form').submit(function(event) {
+{
+$('form').submit(function(event) {
 
 		event.preventDefault(); // Функция отмены отправки в браузере. 
 	
@@ -25,5 +26,12 @@ $(document).ready(function() {
 		});
 
 	});
+}
 
-});
+
+
+
+ 
+
+	
+
