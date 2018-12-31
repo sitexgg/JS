@@ -1,4 +1,4 @@
- // Preloader
+ // ### Preloader ###
 var 
 	divPreloader = document.createElement('div');
 	divPreloader.setAttribute('class', 'preloader');
