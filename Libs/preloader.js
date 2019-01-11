@@ -1,4 +1,5 @@
- // ### Preloader webnet ###
+// ### Preloader WebNet ###
+ // Preloader
 var	divPreloader = document.createElement('div');
 	divPreloader.setAttribute('class', 'preloader');
  // Text loader
