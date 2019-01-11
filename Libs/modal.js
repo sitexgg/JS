@@ -3,20 +3,18 @@
 var Modal0 = document.getElementsByClassName('modal')[0];
  // Event modal
 Modal0.addEventListener('click', showModal);
-function showModal()
-{
+function showModal() {
 	 // Container
-	var 
-		modalDiv = document.createElement('div');
+	var modalDiv = document.createElement('div');
 	 // Modal
-		divContent = document.createElement('div');
+	var	divContent = document.createElement('div');
 		divContent.style.cssText = 'background-color: rgb(254, 254, 254); margin: 8px auto; padding: 2em; border: 1px solid rgb(136, 136, 136); width: 80%; height: auto;';
 	  // Close button 
-		closeSpan = document.createElement('span');
+	var	closeSpan = document.createElement('span');
 		closeSpan.textContent = 'X';
 		closeSpan.style.cssText = 'overflow: auto; margin: 0; user-select: none; cursor: default; font-family: sans-serif; color: rgb(136, 136, 136); float: right; font-size: 2em; font-weight: bold;';
 	 // Text window
-		modalP = document.createElement('p');
+	var	modalP = document.createElement('p');
 		modalP.textContent = 'Message out browser';
 	 // Append elements
 	document.body.appendChild(modalDiv);
@@ -28,15 +26,11 @@ function showModal()
 
 	 // Close click button
 	closeSpan.addEventListener('click', cSpan);
-	function cSpan()
-	{
-		document.body.removeChild(modalDiv);
+	function cSpan() {document.body.removeChild(modalDiv);
 	}
 	 // Close click window
-	window.onclick = function(event)
-	{
-		if(event.target == modalDiv)
-		{
+	window.onclick = function(event) {
+		if(event.target == modalDiv) {
 			document.body.removeChild(modalDiv);
 		}
 	}

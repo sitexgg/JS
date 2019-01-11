@@ -11,7 +11,7 @@ var	divLoader = document.createElement('div');
 	divLoader.setAttribute('class', 'loader');
  // Animation
 var	headStyle = document.createElement('style');
-var	cssPreloader = '.preloader {position: fixed; top: 0; left 0; width: 100%; height: 100%; background-color: black; z-index: 2; transition: 1s all; opacity: 1; visibility: visible;}';
+var	cssPreloader = '*{margin: 0; padding:0;} .preloader {position: fixed; top: 0; left 0; width: 100%; height: 100%; background-color: black; z-index: 2; transition: 1s all; opacity: 1; visibility: visible;}';
 var	cssPreloader0 = '.loader {width: 100px; height: 100px; border: 8px solid white; border-radius: 50%; border-top-color: blue; border-bottom-color: green; border-left-color: red; border-right-color:yellow; box-shadow: -30px 10px 200px blue; position: absolute; left: 50%; top: 50%; transform: transtate(-50%, -50%); animation: 300ms spin infinite linear;}';
 var	cssPreloader1 = '@keyframes spin {from{transform: translate(-50%, -50%) rotate(0deg)} to{transform: translate(-50%, -50%) rotate(360deg)}}';
 
