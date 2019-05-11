@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    background-color: aqua;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+.cardItem {
+    background-color: white;
+    height: 450px;
+    width: 250px;
+    transition-duration: 200ms;
+}
