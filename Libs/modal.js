@@ -1,4 +1,4 @@
-// ### Modal window WebNet ###
+// Modal window WebNet 
  // Get button 
 var Modal0 = document.getElementsByClassName('modal')[0];
  // Event modal
