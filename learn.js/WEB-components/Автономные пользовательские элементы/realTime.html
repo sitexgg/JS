@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 95vh;
+        }
+        real-time {
+            font-size: 4rem;
+        }
+        .countRT {
+            background-color: aqua;
+            padding: 30px;
+            border-radius: 8px;
+            min-width: 200px!important;
+            color: rgb(50, 50, 50);
+        }
+        .dashsRT {
+            animation: dashs 1s infinite;
+        }
+        @keyframes dashs {
+            0% {
+                color: white;
+            }
+        }
+    </style>
+
+    <script>
+        class RealTime extends HTMLElement { // (1)
+        
+            render() {
+                setInterval(() => {
+                    let date = new Date(Date.now());
+                    let sec = date.getSeconds();
+                    let min = date.getMinutes();
+
+                    this.innerHTML = '<span class="countRT">' + min + '</span> <span class="dashsRT">:</span> <span class="countRT">' + sec + '</span>';
+                }, 1000);
+            }
+
+            connectedCallback() { // (2)
+                if (!this.rendered) {
+                    this.render();
+                    this.rendered = true;
+                }
+            }
+        }
+        
+        customElements.define("real-time", RealTime); // (2)
+    </script>
+        
+        <!-- (3) -->
+        <real-time></real-time>
+</body>
+</html>
